@@ -2,10 +2,14 @@ redo = True
 while redo:
   try:
     number_of_digits = int(input())
-    redo = False
+    if number_of_digits > 0:
+      redo = False
+    else: 
+      number_of_digits < 0
+      print("Number must be postive")
+      redo = True
   except:
-    if number_of_digits < 0:
-      print("Please enter a positive interger")
+      print("Please enter a positive interger not a letter")
       redo = True
 def calculatePi(digits):
   result = 0
