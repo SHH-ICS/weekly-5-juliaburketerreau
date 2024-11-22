@@ -1,4 +1,11 @@
-number_of_digits = int(input())
+redo = True
+while redo:
+  try:
+    number_of_digits = int(input())
+    redo = False
+  except:
+    print("Please enter a positive interger")
+    redo = True
 def calculatePi(digits):
   result = 0
   for i in range (number_of_digits):
