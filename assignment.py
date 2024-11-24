@@ -12,7 +12,7 @@ while redo:
       print("Please enter a positive interger not a letter")
       redo = True
 def calculatePi(digits):
-  result = 1
+  result = 0
   for i in range (number_of_digits):
     result = (result+((-1)**i*4)/(2*i+1))
   return result
